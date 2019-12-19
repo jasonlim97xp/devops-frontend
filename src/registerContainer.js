@@ -89,7 +89,7 @@ export default class RegisterContainer extends Component {
         }
         else if (this.state.name != "" && this.state.email != "" && this.state.password.length >= 6) {
             try {
-                let response = await fetch('http://192.168.43.170:3000/users/signup', {
+                let response = await fetch('http://ec2-18-219-240-129.us-east-2.compute.amazonaws.com:3000/users/signup', {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',

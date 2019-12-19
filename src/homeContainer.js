@@ -22,7 +22,7 @@ export default class HomeContainer extends Component {
 
     async componentDidMount() {
         let token = await AsyncStorage.getItem('token');
-        fetch('http://192.168.43.170:3000/users/getallname', {
+        fetch('http://ec2-18-219-240-129.us-east-2.compute.amazonaws.com:3000/users/getallname', {
             method: 'GET',
             headers: { 'Authorization': token }
         })
